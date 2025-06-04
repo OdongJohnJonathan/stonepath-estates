@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+}
+
+#contact-us{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/1.jpeg) center/cover no-repeat;
+    /* background: #f0e8e8; */
+}
+
+#contact-us .mother-contact{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contact-us .mother-contact .child-contact{
+    width: 45%;
+    height: 90%;
+    background: #cac6c6ad;
+    margin: auto;
+    border-radius: 0 66px 0 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#contact-us .mother-contact .child-contact iframe{
+    height: 100%;
+    width: 100%;
+}
+
+#contact-us .mother-contact .child-contact h4{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#contact-us .mother-contact .child-contact .message-input{
+    padding: 90px 70px;
+    border-radius: 25px;
+    border: none;
+}
+
+#contact-us .mother-contact .child-contact .submit-btn{
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background: #ff4757;
+    color: #fff;
+}
+
+#contact-us .mother-contact .child-contact .submit-btn:hover{
+    background: #000;
+    color:  #f1f2f6;
+    text-decoration: underline;
+}
+
+.hidden {
+    transform: translateY(-100%); /* Move the navbar up */
+    transition: transform 0.3s ease; /* Smooth transition */
+}

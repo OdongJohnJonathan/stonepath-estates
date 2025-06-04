@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mother-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/1.jpeg) center/cover no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box, .signup-box{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.input-field{
+    margin-bottom: 15px;
+}
+
+.input-field label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn{
+    width: 100%;
+    padding: 5px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #4cae4c;
+}
+
+.switch-page{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.switch-page a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.switch-page a:hover{
+    text-decoration: underline;
+}
+.hidden {
+    transform: translateY(-100%); /* Move the navbar up */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.error:hover{
+    cursor: pointer;
+}

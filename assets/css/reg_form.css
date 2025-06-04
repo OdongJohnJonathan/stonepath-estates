@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#registration_form{
+    height: 130vh;
+    background: #fff;
+}
+
+#registration_form .mother-reg{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/11.jpg) center/cover no-repeat;
+}
+
+#registration_form .mother-reg .child-reg{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+#registration_form .mother-reg h2{
+    text-align: center;
+    color: #fff !important;
+    font-size: 2.0rem;
+}
+
+#registration_form .mother-reg .child-reg .input-field{
+    margin-bottom: 15px;
+}
+
+#registration_form .mother-reg .child-reg .input-field label{
+    font-weight: bold;
+    margin: 0;
+}
+
+#registration_form .mother-reg .child-reg .input-fieldd{
+    margin-bottom: 15px;
+}
+
+#registration_form .mother-reg .child-reg .input-fieldd .gg{
+    font-weight: bold;
+    margin: 0;
+}
+
+#registration_form .mother-reg .child-reg .input-field input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn{
+    width: 100%;
+    padding: 5px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #4cae4c;
+}
+
+.hidden {
+    transform: translateY(-100%); /* Move the navbar up */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
