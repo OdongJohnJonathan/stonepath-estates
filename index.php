@@ -35,6 +35,23 @@ require_once 'includes/connect.php'; // Make sure your DB connection is correct
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        .category-box {
+            transition: all 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+        .category-box:hover {
+            transform: translateY(-8px);
+            border-color: #0d6efd;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .category-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .category-box:hover .category-icon {
+            transform: scale(1.2);
+        }
+
     </style>
 </head>
 <body>
@@ -67,28 +84,37 @@ require_once 'includes/connect.php'; // Make sure your DB connection is correct
 
 <!-- Categories -->
 <section class="py-5 bg-light text-center">
-    <div class="container">
-        <h2 class="mb-4">Explore Categories</h2>
-        <div class="row g-4">
-            <div class="col-md-3">
-                <i class="bi bi-house-door category-icon"></i>
-                <h5>Rent</h5>
-            </div>
-            <div class="col-md-3">
-                <i class="bi bi-currency-dollar category-icon"></i>
-                <h5>Buy</h5>
-            </div>
-            <div class="col-md-3">
-                <i class="bi bi-globe2 category-icon"></i>
-                <h5>Airbnb</h5>
-            </div>
-            <div class="col-md-3">
-                <i class="bi bi-box2 category-icon"></i>
-                <h5>Other</h5>
-            </div>
-        </div>
+  <div class="container">
+    <h2 class="mb-4">Explore Categories</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <a href="properties.php" class="category-box text-decoration-none d-block p-4 rounded shadow-sm bg-white">
+          <i class="bi bi-house-door category-icon fs-1 mb-2 d-block text-primary"></i>
+          <h5 class="text-dark">Rent</h5>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="properties.php" class="category-box text-decoration-none d-block p-4 rounded shadow-sm bg-white">
+          <i class="bi bi-currency-dollar category-icon fs-1 mb-2 d-block text-success"></i>
+          <h5 class="text-dark">Buy</h5>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="properties.php" class="category-box text-decoration-none d-block p-4 rounded shadow-sm bg-white">
+          <i class="bi bi-globe2 category-icon fs-1 mb-2 d-block text-info"></i>
+          <h5 class="text-dark">Airbnb</h5>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="properties.php" class="category-box text-decoration-none d-block p-4 rounded shadow-sm bg-white">
+          <i class="bi bi-box2 category-icon fs-1 mb-2 d-block text-warning"></i>
+          <h5 class="text-dark">Other</h5>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
+
 
 <!-- Featured Properties -->
 <section class="py-5">
